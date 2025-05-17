@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>123 IMAC</title>
+    <link rel="stylesheet" href="styles/chat.css">
+</head>
+<body>
+    <header>
+        <h1><a class="site-title" href="index.html">123 IMAC</a></h1>
+        <nav>
+            <ul>
+                <li><a href="#login">Connexion</a></li>
+                <li><a href="#logup">Inscription</a></li>
+                <li><a href="#search">Recherche</a></li>
+                <li><a href="#members">Membres</a></li>
+                <li><a href="#groups">Groupes</a></li>
+                <li><a href="#mp">Messages privés</a></li>
+                <li><a href="#profil">Profil</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="list">
+            <h4>Files de discussions</h4>
+            <ul>
+                <li><a href="#" onclick="switchMessage()">Besoin d'aide</a> <br><small>22 sept. 2025</small></li>
+                <li><a href="#" onclick="switchMessage()">Besoin d'aide</a> <br><small>22 sept. 2024</small></li>
+                <li><a href="#" onclick="switchMessage()">Besoin d'aide</a> <br><small>22 sept. 2023</small></li>
+                <li><a href="#" onclick="switchMessage()">Besoin d'aide</a> <br><small>22 sept. 2022</small></li>
+                <li><a href="#" onclick="switchMessage()">Besoin d'aide</a> <br><small>22 sept. 2021</small></li>
+                <li><a href="#" onclick="switchMessage()">Besoin d'aide</a> <br><small>22 sept. 2020</small></li>
+                <li><a href="#" onclick="switchMessage()">Besoin d'aide</a> <br><small>22 sept. 2019</small></li>
+                <li><a href="#" onclick="switchMessage()">Besoin d'aide</a> <br><small>22 sept. 2018</small></li>
+                <li><a href="#" onclick="switchMessage()">Besoin d'aide</a> <br><small>22 sept. 2017</small></li>
+                <li><a href="#" onclick="switchMessage()">Besoin d'aide</a> <br><small>22 sept. 2016</small></li>
+                <li><a href="#" onclick="switchMessage()">Besoin d'aide</a> <br><small>22 sept. 2015</small></li>
+                <li><a href="#" onclick="switchMessage()">Besoin d'aide</a> <br><small>22 sept. 2014</small></li>
+                <li><a href="#" onclick="switchMessage()">Besoin d'aide</a> <br><small>22 sept. 2013</small></li>
+                <li><a href="#" onclick="switchMessage()">Besoin d'aide</a> <br><small>22 sept. 2012</small></li>
+                <li><a href="#" onclick="switchMessage()">Besoin d'aide</a> <br><small>22 sept. 2011</small></li>
+                <li><a href="#" onclick="switchMessage()">Besoin d'aide</a> <br><small>22 sept. 2010</small></li>
+                <li><a href="#" onclick="switchMessage()">Besoin d'aide</a> <br><small>22 sept. 2009</small></li>
+                <li><a href="#" onclick="switchMessage()">Besoin d'aide</a> <br><small>22 sept. 2008</small></li>
+                <li><a href="#" onclick="switchMessage()">Besoin d'aide</a> <br><small>22 sept. 2007</small></li>
+            </ul>
+        </section>
+        <section class="discussion">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="first-col left-radius right-radius">Discussions diverses - <small>Besoin d'aide</small></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="chat">
+                            <p>SaveThePhoenix</p>
+                            <p class="old-message">Bonjour, il y a quelques années mon xxx xxxxxxxx a xxxxxxxxx, nous étions à l’xxxx en xxxx, J’aurais besoin de votre xxxx urgente si vous avez des xxxxxxxx quant à ce qu’il serait xxxxxxx. S’il vous plait par pitié si vous avez des xxxxxxxxx xxxxxxx-moi au xxxxxxxxxxxx.<br><br>VB.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="new-message">
+                            <div class="message">
+                                <div class="tap-tap">Votre message ici...</div>
+                                <div class="click">&crarr;</div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2006 - 123 IMAC. Tous droits réservés.</p>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+
+<script>
+    messages1 = "Bonjour, il y a quelques années mon xxx xxxxxxxx a xxxxxxxxx, nous étions à l’xxxx en xxxx, J’aurais besoin de votre xxxx urgente si vous avez des xxxxxxxx quant à ce qu’il serait xxxxxxx. S’il vous plait par pitié si vous avez des xxxxxxxxx xxxxxxx-moi au xxxxxxxxxxxx.<br><br>VB."
+    messages2 = "mi wile alasa jan pi tenpo kama suli.<br><br> mi pilin e ni: jan pona mi li weka tan mi kepeken tenpo mute. tenpo sike tu en wan la mi ken ala lukin e ona. mi pilin e ni: ona li lon poka mi lon tenpo ni.<br><br> ona li jan pona pi wile sona mute. ona li pana e pilin pona tawa mi. mi wile lukin e ona tan ni: mi wile toki e ona. mi wile sona e ni: ona li kama pona anu seme?<br><br> jan pi nimi jan Alekan la, sina sona anu seme?<br><br> o pali e pona! o toki tawa mi la o pana sona tawa mi!"
+
+    state = 1;
+    function switchMessage() {
+        let p = document.getElementsByClassName('old-message')[0];
+        
+        if (state == 0) {
+            p.innerHTML = messages1;
+            state = 1;
+        } else {
+            p.innerHTML = messages2;
+            state = 0;
+        }
+    }
+</script>
+
+</html>
