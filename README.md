@@ -8,12 +8,10 @@ This project is a mockup of a discussion forum inspired by the design aesthetics
 discussion-forum-mockup
 ├── src
 │   ├── index.html        # Main HTML document for the forum
+|   ├── chat.html         # HTML document for a discussion
 │   ├── styles
-│   │   └── style.css     # CSS styles reflecting the 2000s aesthetic
-│   ├── scripts
-│   │   └── main.js       # JavaScript for handling user interactions
-│   └── assets
-│       └── README.md     # Information about the assets used in the project
+|   |   ├── style.css     # CSS styles reflecting the 2000s aesthetic
+│   │   └── chat.css     
 └── README.md             # Documentation for the project
 ```
 
